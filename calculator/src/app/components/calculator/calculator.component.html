@@ -1,0 +1,14 @@
+<div style="height: 866px; width: 433px; background-color: 'var(--color-400)';">
+    <div style="height: 197px; width: 400px; padding: 13.5px;">
+        <app-display [value]="displayValues"></app-display>
+    </div>
+    <ng-container *ngFor="let row of arrayCalculatorValues">
+        <div style="width: 100%;">
+            <ng-container *ngFor="let button of row">
+                <div class="button" [style.width]="((button.width * 80) + ((button.width - 1) * 27)) + 'px'">
+                    <app-buttons [button]="button" (clickButton)="onClickButton($event)"></app-buttons>
+                </div>
+            </ng-container>
+        </div>
+    </ng-container>
+</div>

@@ -1,0 +1,9 @@
+{
+  "name": "syneco-planning-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "syneco-planning-api/src/index.js",
+  "bin": "syneco-planning-api/src/index.js",
+  "author": "SKA Ltda.",
+  "license": "ISC"
+}
